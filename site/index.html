@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="access-report">
+<title>Access Report</title>
+<meta name="description" content="Access Report of My Home Server">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+<!-- CSS Reset -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<!-- Milligram CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+<!-- Custom JS -->
+<script src="/assets/index.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <h1>Quick Report</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column column-25">
+            <button class="button" id="today-report" onclick="getQuickReport(false, false)">Today's Report</button>
+        </div>
+        <div class="column column-25">
+            <button class="button" id="yesterday-report" onclick="getQuickReport(true, false)">Yesterday's Report</button>
+        </div>
+        <div class="column column-25">
+            <button class="button" id="monthly-report" onclick="getQuickReport(false, true)">Monthly Report</button>
+        </div>
+        <div class="column column-25">
+            <button class="button" id="last-month-report" onclick="getQuickReport(true, true)">Last Month Report</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h1>Select Date</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column column-25">
+            <input type="date" id="date">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column column-25">
+            <button class="button" onclick="getReport(true)">Go Daily Report</button>
+        </div>
+        <div class="column column-25">
+            <button class="button" onclick="getReport(false)">Go Monthly Report</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

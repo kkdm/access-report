@@ -1,0 +1,1 @@
+0 2 * * * source /usr/local/report/.env; bash /usr/local/report/generate-report.sh

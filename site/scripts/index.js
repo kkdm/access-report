@@ -7,9 +7,7 @@ function getQuickReport(isLast, isMonth) {
     }
   }
   else {
-    if (isLast) {
-      dt.setDate(dt.getDate() - 1);
-    }
+    dt.setDate(dt.getDate() - 1);
   }
 
   let y = dt.getFullYear();

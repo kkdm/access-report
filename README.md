@@ -9,13 +9,15 @@
 
 ```
 dir root
-+-- 2020
-    +-- 01
-        monthly.html
+site
++-- report
+    +-- 2020
         +-- 01
-            +-- daily.html
+            monthly.html
+            +-- 01
+                +-- daily.html
+            +-- 02
+            ...
         +-- 02
         ...
-    +-- 02
-    ...
 ```

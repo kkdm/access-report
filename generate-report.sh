@@ -1,9 +1,9 @@
 #!/bin/bash
-set -euxo pipefail
+set -euo pipefail
 
 _TARGET=${TARGET}
-_ROOT=${ROOT_DIR}
-_LOG_DIR=${LOG_DIR}
+_ROOT=${ROOT_DIR}/site
+_LOG_DIR=${LOG_DIR}/log
 
 _Y=`date +%Y --date='1 day ago'`
 _M=`date +%m --date='1 day ago'`
@@ -12,9 +12,10 @@ _DAILY_DIR=${_ROOT}/${_Y}/${_M}/${_D}
 _MONTHLY_DIR=${_ROOT}/${_Y}/${_M}
 _YEARLY_DIR=${_ROOT}/${_Y}
 
-# Create daily dir
+# Create dir
 mkdir -p ${_DAILY_DIR}
 
+# Add yesterday log to monthly & yearly log
 cat ${TARGET} >> ${_LOG_DIR}/monthly.log
 cat ${TARGET} >> ${_LOG_DIR}/yearly.log
 

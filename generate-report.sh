@@ -2,7 +2,7 @@
 set -euo pipefail
 
 _TARGET=${TARGET}
-_ROOT=${ROOT_DIR}/site
+_ROOT=${ROOT_DIR}/site/report
 _LOG_DIR=${ROOT_DIR}/log
 
 _Y=`date +%Y --date='1 day ago'`
